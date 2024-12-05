@@ -1,133 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{ margin:0;
-        padding:0;
-        }
-        .bar {
-    background-color: transparent;
-    height: 0px;
-    width: 100%;
-    margin: 0;
-    padding: 0px;
-    display: flex;
-    justify-content: space-between;
-        }
-        
-        .navbar{
-            background-color: transparent;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-decoration: dotted;
-        }   
-        .navbar li{
-            float: left;
-            list-style: none;
-            padding: 10px 50px;
-        }
-        .navbar ul{
-            overflow: auto;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
-        }
-        .navbar li a{
-            padding: 3px 3px;
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
+    .bar {
+      background-color: transparent;
+      height: 0px;
+      width: 100%;
+      margin: 0;
+      padding: 0px;
+      display: flex;
+      justify-content: space-between;
+    }
 
-        }
-        
+    .navbar {
+      background-color: transparent;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-decoration: dotted;
+    }
 
+    .navbar li {
+      float: left;
+      list-style: none;
+      padding: 10px 50px;
+    }
 
-        #img1{height:100vh;
-              width:100vw;
-              object-fit: cover;
-              display: flex;
-              }
-              #img1 img {
-            object-fit: cover;    
-            height: 100%;        
-            width: 100%;  
-            -webkit-filter: blur(1px); 
-        filter: blur(2px)        
-        }
-        .hero-image {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-              url("pexels-mart-production-7679866.jpg");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  margin-top: 0;
-  height: 800px;
-  margin-right: auto;
-}
+    .navbar ul {
+      overflow: auto;
+
+    }
+
+    .navbar li a {
+      padding: 3px 3px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+
+    }
 
 
 
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  color: whitesmoke;
-  margin-left: 10px;
-}
-.hero-text P{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    #img1 {
+      height: 100vh;
+      width: 100vw;
+      object-fit: cover;
+      display: flex;
+    }
 
-}
+    #img1 img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      -webkit-filter: blur(1px);
+      filter: blur(2px)
+    }
 
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
+    .hero-image {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("pexels-mart-production-7679866.jpg");
+      height: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      margin-top: 0;
+      height: 800px;
+      margin-right: auto;
+    }
 
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
-}
 
-        
-    </style>
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      color: whitesmoke;
+      margin-left: 10px;
+    }
+
+    .hero-text P {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    .hero-text button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 25px;
+      color: black;
+      background-color: #ddd;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .hero-text button:hover {
+      background-color: #555;
+      color: white;
+    }
+
+    .circle {
+      height: 24px;
+      width: 24px;
+      border-radius: 24px;
+      background-color: yellowgreen;
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+
+    }
+
+    * {
+      cursor: none !important;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contact us</a></li>
-                <div class="search_box" style="margin-left: 80pc;">
-                    This is search
-                </div>
-            </ul>
-        </nav>
-    </header>
-    <div class="bar">
-        <div><img src="All pictures/PHOTO-2024-12-05-17-10-59.jpg"></div>
-    </div>
-    <div class="hero-image">
-        <div class="hero-text">
-          <h1 style="font-size:100px">Design your style,
-            <br>define your world</h1>
-          </h1>
-          <p>Here we give you customised pieces</p>
-          <button>Hire me</button>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact us</a></li>
+        <div class="search_box" style="margin-left: 80pc;">
+          This is search
         </div>
+      </ul>
+    </nav>
+  </header>
+  <div class="bar">
+    <div><img src="All pictures/PHOTO-2024-12-05-17-10-59.jpg"></div>
+  </div>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:100px">Design your style,
+        <br>define your world
+      </h1>
+      </h1>
+      <p>Here we give you customised pieces</p>
+      <button>Hire me</button>
     </div>
-    
-    
+  </div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <script>
+    const coords = { x: 0, y: 0 };
+    const circles = document.querySelectorAll(".circle");
+
+    circles.forEach(function (circle, index) {
+      circle.x = 0;
+      circle.y = 0;
+    });
+    window.addEventListener("mousemove", function (e) {
+      coords.x = e.clientX;
+      coords.y = e.clientY;
+    });
+    function animateCircles() {
+      let x = coords.x;
+      let y = coords.y;
+
+      circles.forEach(function (circle, index) {
+        circle.style.left = x - 12 + "px";
+        circle.style.top = y - 12 + "px";
+        circle.style.scale = (circles.length - index) / circles.length;
+        circle.x = x;
+        circle.y = y;
+
+        const nextCircle = circles[index + 1] || circles[0];
+
+        x += (nextCircle.x - x) * 0.1;
+        y += (nextCircle.y - y) * 0.1;
+      });
+
+      requestAnimationFrame(animateCircles);
+    }
+
+    animateCircles();
+  </script>
+
 </body>
+
 </html>
