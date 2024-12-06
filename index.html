@@ -145,6 +145,25 @@
     * {
       cursor: none !important;
     }
+    .container{display: flex;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    padding:20px;
+    margin: 20px auto;
+    flex-wrap:wrap}
+    #t1{text-align: center;}
+
+    .container > div{height:300px;
+                    width:300px;
+                  margin:10px;
+                  overflow:hidden;
+                }
+    .container > div img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+}
+    
   </style>
 </head>
 
@@ -208,6 +227,14 @@
       <p></p>
       <button style="font-size: x-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: bold;">Let's Design</button>
     </div>
+  </div>
+  <h1 id="t1">let's DIY it</h1>
+ <div class="container" >
+      <div><img src='All pictures/tshirt.jpg'>
+      <p>Diy a T-shirt</p></div>
+      <div><img src='All pictures/diy shoes.jpg'>
+      <p>Diy shoes</p></div>
+      <div><img src='All pictures/bag.jpg'></div>
   </div>
   <div class="circle"></div>
   <div class="circle"></div>
