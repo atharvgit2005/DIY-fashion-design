@@ -2,194 +2,207 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GRWM</title>
-  <link rel="icon" href="All pictures/fav.jgp.jpeg" type="image/x-icon">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRWM</title>
+    <link rel="icon" href="All pictures/fav.jgp.jpeg" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            height: 100vh;
+            position: relative;
+        }
 
-    .bar {
-      background-color: transparent;
-      height: 0px;
-      width: 100%;
-      margin: 0;
-      padding: 0px;
-      display: flex;
-      justify-content: space-between;
+        .bar {
+            background-color: transparent;
+            height: 0px;
+            width: 100%;
+            margin: 0;
+            padding: 0px;
+            display: flex;
+            justify-content: space-between;
 
-    }
+        }
 
-    .navbar {
-      background:rgba(0, 0, 0, 0.3);
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      text-decoration: dotted;
-      z-index: 1;
-      position: fixed;
-    }
+        .navbar {
+            background: rgba(0, 0, 0, 0.3);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: dotted;
+            z-index: 1;
+            position: fixed;
+        }
 
-    .navbar li {
-      float: left;
-      list-style: none;
-      padding: 16px 30px;
-    }
+        .navbar li {
+            float: left;
+            list-style: none;
+            padding: 16px 30px;
+        }
 
-    .navbar ul {
-      overflow: auto;
-      
-
-    }
-
-    .navbar li a {
-      padding: 3px 3px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-
-    }
-    .navbar li a:hover {
-        color: grey;
-      
-    }
-
-    #img1 {
-      height: 100vh;
-      width: 100vw;
-      object-fit: cover;
-      display: flex;
-    }
-
-    #img1 img {
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-      -webkit-filter: blur(1px);
-      filter: blur(2px)
-    }
-
-    .hero-image {
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("pexels-mart-production-7679866.jpg");
-      height: 50%;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      margin-top: 0;
-      height: 1068px;
-      margin-right: auto;
-    }
+        .navbar ul {
+            overflow: auto;
 
 
+        }
 
-    .hero-text {
-      position: absolute;
-      top: 41%;
-      left: 28%;
-      transform: translate(-50%, -50%);
-      color: whitesmoke;
-      margin-left: 10px;
-    }
+        .navbar li a {
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
 
-    .hero-text P {
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
 
-    }
+        .navbar li a:hover {
+            color: grey;
 
-    .hero-text button {
-      border: none;
-      outline: 0;
-      display: inline-block;
-      padding: 10px 25px;
-      color: black;
-      background-color: #ddd;
-      text-align: center;
-      cursor: pointer;
-    }
+        }
 
-    .hero-text button:hover {
-      background-color: #555;
-      color: white;
-    }
-    .logo{
-        width: 10px;
-        height: 10px;
-        padding: 10px;
-    }
+        #img1 {
+            height: 100vh;
+            width: 100vw;
+            object-fit: cover;
+            display: flex;
+        }
 
-    .circle {
-      height: 15px;
-      width: 15px;
-      border-radius: 15px;
-      background-color: rgb(255, 255, 255);
-      position: absolute;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      z-index: 2;
+        #img1 img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            -webkit-filter: blur(1px);
+            filter: blur(2px)
+        }
 
-    }
-    .search_box{
-        border: solid 5px white;
-        border-radius:20px;
-        background:rgba(0, 0, 0, 0.3);
-    }
-    .menue ul li a{
-        margin: 0px;
-    }
+        .hero-image {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("pexels-mart-production-7679866.jpg");
+            height: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            margin-top: 0;
+            height: 1068px;
+            margin-right: auto;
+        }
 
-    * {
-      cursor: none !important;
-    }
-    .container{display: flex;
-    justify-content: space-evenly;
-    max-width: 1200px;
-    padding:20px;
-    margin: 20px auto;
-    flex-wrap:wrap}
-    #t1{text-align: center;}
 
-    .container > div{height:300px;
-                    width:300px;
-                  margin:10px;
-                  overflow:hidden;
-                }
-    .container > div img {
-                    object-fit: cover;
-                    width: 100%;
-                    height: 100%;
-}
-    
-  </style>
+
+        .hero-text {
+            position: absolute;
+            top: 41%;
+            left: 28%;
+            transform: translate(-50%, -50%);
+            color: whitesmoke;
+            margin-left: 10px;
+        }
+
+        .hero-text P {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .hero-text button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 10px 25px;
+            color: black;
+            background-color: #ddd;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .hero-text button:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        .logo {
+            width: 10px;
+            height: 10px;
+            padding: 10px;
+        }
+
+        .circle {
+            height: 2vh;
+            width: 2vh;
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* pointer-events: none; */
+            z-index: 2;
+
+        }
+
+        .search_box {
+            border: solid 5px white;
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .menue ul li a {
+            margin: 0px;
+        }
+
+        * {
+            cursor: none !important;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 1200px;
+            padding: 20px;
+            margin: 20px auto;
+            flex-wrap: wrap
+        }
+
+        #t1 {
+            text-align: center;
+        }
+
+        .container>div {
+            height: 300px;
+            width: 300px;
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        .container>div img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-      <nav class="navbar" style="display: flex; justify-content: space-between; width: 100%; ">
-        <div class="contact_us" style="display: flex;justify-content: left;  width: 100%;">
-            <ul>
-                <li>
-                    <a href="#">Contact us</a>
-                </li>
-            </ul>
-        </div>
-        <div class="logo" style="display: flex;justify-content: center;  width: 100%;">
-            <a href="#">
-                <img src="All pictures/GRWM white.png" style="width:  150px;">
-            </a>
-        </div>
-        <div class="menu" style="display: flex; justify-content: right;  width: 100%;">
-            <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            </ul>
-        </div>
-          <!-- <ul style="display: flex;
+    <header>
+        <nav class="navbar" style="display: flex; justify-content: space-between; width: 100%; ">
+            <div class="contact_us" style="display: flex;justify-content: left;  width: 100%;">
+                <ul>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logo" style="display: flex;justify-content: center;  width: 100%;">
+                <a href="#">
+                    <img src="All pictures/GRWM white.png" style="width:  150px;">
+                </a>
+            </div>
+            <div class="menu" style="display: flex; justify-content: right;  width: 100%;">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                </ul>
+            </div>
+            <!-- <ul style="display: flex;
           justify-content: space-between;
           flex-direction: column;
           width: 100vw;">
@@ -206,90 +219,95 @@
             <li><a href="">Contact us</a></li>
     </div>
 
-    <!-- <div class="search_box" style="margin-left: 83pc; 
+     <div class="search_box" style="margin-left: 83pc; 
          margin-top: 8px;">
           <input type="text" name="search" id="search" placeholder="Serach here">
     </div> -->
-      <!-- </ul> --> -->
-    </nav>
-  </header>
-  <div class="bar">
-    <div><img src="All pictures/p.jpg"></div>
-  </div>
-  <div class="hero-image">
-    <div class="hero-text">
-      <h1 style="font-size:100px">Design your style,
-        <br>define your world
-      </h1>
-      <h1>
-        mera naam hi scinchan hai
-      </h1>
-      <p></p>
-      <button style="font-size: x-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: bold;">Let's Design</button>
+            <!-- </ul> -->
+        </nav>
+    </header>
+    <div class="bar">
+        <div><img src="All pictures/p.jpg"></div>
     </div>
-  </div>
-  <h1 id="t1">let's DIY it</h1>
- <div class="container" >
-      <div><img src='All pictures/tshirt.jpg'>
-      <p>Diy a T-shirt</p></div>
-      <div><img src='All pictures/diy shoes.jpg'>
-      <p>Diy shoes</p></div>
-      <div><img src='All pictures/bag.jpg'></div>
-  </div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <div class="circle"></div>
-  <script>
-    const coords = { x: 0, y: 0 };
-    const circles = document.querySelectorAll(".circle");
-    
-    circles.forEach(function(circle, index) {
-        circle.x = 0;
-        circle.y = 0;
-    });
-    window.addEventListener("mousemove", function (e) {
-        coords.x = e.clientX;
-        coords.y = e.clientY;
-    });
-    function animateCircles() {
-        let x = coords.x;
-        let y = coords.y;
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:100px">Design your style,
+                <br>define your world
+            </h1>
+            <h1>
+                mera naam hi scinchan hai
+            </h1>
+            <p></p>
+            <button
+                style="font-size: x-large; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: bold;">Let's
+                Design</button>
+        </div>
+    </div>
+    <h1 id="t1">let's DIY it</h1>
+    <div class="container">
+        <div><img src='All pictures/tshirt.jpg'>
+            <p>Diy a T-shirt</p>
+        </div>
+        <div><img src='All pictures/diy shoes.jpg'>
+            <p>Diy shoes</p>
+        </div>
+        <div><img src='All pictures/bag.jpg'></div>
+    </div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <script>
+        const coords = { x: 0, y: 0 };
+        const circles = document.querySelectorAll(".circle");
 
         circles.forEach(function (circle, index) {
-            circle.style.left = x - 12 + "px";
-            circle.style.top = y - 12 + "px";
-            circle.style.scale =(circles.length - index) / circles.length;
-            circle.x = x;
-            circle.y = y;
-
-            const nextCircle = circles[index + 1] || circles[0];
-
-            x += (nextCircle.x - x) * 0.3;
-            y += (nextCircle.y - y) * 0.3;
+            circle.x = 0;
+            circle.y = 0;
+        });
+        window.addEventListener("mousemove", function (e) {
+            coords.x = e.pageX;
+            coords.y = e.pageY;
         });
 
-        requestAnimationFrame(animateCircles);
-    }
+        function animateCircles() {
+            let x = coords.x;
+            let y = coords.y;
 
-    animateCircles();
-</script>
+            circles.forEach(function (circle, index) {
+                circle.style.left = x - circle.offsetWidth / 2 + "px";
+                circle.style.top = y - circle.offsetHeight / 2 + "px";
+                circle.style.scale = (circles.length - index) / circles.length;
+                circle.x = x;
+                circle.y = y;
+
+                const nextCircle = circles[index + 1] || circles[0];
+
+                x += (nextCircle.x - x) * 0.3;
+                y += (nextCircle.y - y) * 0.3;
+            });
+
+            requestAnimationFrame(animateCircles);
+        }
+
+        animateCircles();
+    </script>
 
 </body>
 
