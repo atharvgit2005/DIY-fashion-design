@@ -4,6 +4,7 @@ body {
     overflow-x: hidden;
     height: 100vh;
     position: relative;
+    background-color:   white;
 }
 
 .bar {
@@ -169,3 +170,4 @@ body {
     width: 100%;
     height: 100%;
 }
+
