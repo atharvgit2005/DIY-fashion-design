@@ -46,8 +46,8 @@ body {
 
 }
 
-.menu a:hover {
-    color: transparent;
+.navbar a:hover {
+    color: grey;
 
 }
 
@@ -124,13 +124,13 @@ body {
     height: 2vh;
     width: 2vh;
     border-radius: 50%;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     position: absolute;
     top: 0;
     left: 0;
-    /* pointer-events: none; */
+    pointer-events: none;
     z-index: 2;
-    border: 1px solid back;
+    border: 1px solid black;
 
 }
 
