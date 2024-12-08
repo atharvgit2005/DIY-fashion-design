@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
     height: 100vh;
     position: relative;
-    background-color:   white;
+    background-color: white;
 }
 
 .bar {
@@ -46,8 +46,8 @@ body {
 
 }
 
-.navbar li a:hover {
-    color: grey;
+.menu a:hover {
+    color: transparent;
 
 }
 
@@ -159,6 +159,7 @@ body {
 
 #t1 {
     text-align: center;
+    color: black;
 }
 
 .container>div {
@@ -173,4 +174,33 @@ body {
     width: 100%;
     height: 100%;
 }
+
+.shop{
+    display: flex;
+    width: 10vh;
+    height: 26vh;
+    justify-content: left;
+}
+.diy_school{
+    display: flex;
+    width: 10vh;
+    height: 26vh;
+    justify-content: center;
+
+}
+.tutorials{
+    display: flex;
+    width: 10vh;
+    height: 26vh;
+    justify-content: right;
+
+}
+#videolst{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30vh;
+
+
+}
+
 
