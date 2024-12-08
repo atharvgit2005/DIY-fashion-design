@@ -130,7 +130,7 @@ body {
     left: 0;
     pointer-events: none;
     z-index: 2;
-    border: 1px solid black;
+    border: 0.5px solid black;
 
 }
 
@@ -180,6 +180,7 @@ body {
     width: 10vh;
     height: 26vh;
     justify-content: left;
+    margin-left: 80px;
 }
 .diy_school{
     display: flex;
@@ -193,13 +194,20 @@ body {
     width: 10vh;
     height: 26vh;
     justify-content: right;
+    margin-right: 80px;
 
 }
 #videolst{
     display: flex;
     justify-content: space-between;
-    margin-top: 30vh;
-
+    margin-top: 10vh;
+}
+#tutorial1{
+    display: flex;
+    margin-top: 200px;
+}
+.distressed{
+    width: 100px;
 
 }
 
