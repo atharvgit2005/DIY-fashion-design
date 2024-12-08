@@ -9,14 +9,14 @@
 </head>
 <body>
     <div class="wraper">
-        <form action="">
             <h1>Login</h1>
+            <h3 id="warn"></h3>
             <div class="inputbox">
-                <input type="text" placeholder="user-name" required>
+                <input type="text" placeholder="user-name" required id="user">
                 <i class='bx bxs-user'></i>
             </div>
             <div class="inputbox">
-                <input type="password" placeholder="password" required>
+                <input type="password" placeholder="password" required id="pass">
                 <i class='bx bxs-lock-alt' ></i>
             </div>
             <div class="rem-for">
@@ -24,12 +24,13 @@
                 <a href="#">Forgot password</a>
 
             </div>
-            <button type="submit" class="btn"><a href="index.html">Login</a></button>
+
+            <button class="btn" onclick="log_in()">Login</button>
+
             <div class="register">
-                <p>Dont have an acount <a href="#">Registere</a></p>
+                <p>Dont have an acount <a href="#">Register</a></p>
                 
             </div>
-        </form>
 
     </div>
     <div class="circle"></div>
@@ -86,6 +87,23 @@
         }
 
         animateCircles();
+
+        function log_in(){
+            const user = document.getElementById('user');
+            const pass = document.getElementById('pass');
+
+            let userval = String(user.value);
+            let passval = String(pass.value);
+
+            if (userval != '' && passval != ''){
+                window.location.href = "index.html";
+            }
+            else{
+                document.getElementById('warn').innerHTML = "Please enter both User name and Password";
+                document.getElementById('warn').style.backgroundColor = "" ;
+                document.getElementById('warn').style.padding = "2rem" ;
+            }
+        }
     </script>
 </body>
 </html>

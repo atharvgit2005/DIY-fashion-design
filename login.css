@@ -117,3 +117,9 @@ button a{
     text-decoration: none;
     color: #333;
 }
+#warn{
+    text-align: center;
+    color: red;
+    backdrop-filter: blur(20px);
+    
+}

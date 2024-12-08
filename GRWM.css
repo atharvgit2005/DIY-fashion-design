@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
     height: 100vh;
     position: relative;
-    background-color: white;
+    background-color: black;
 }
 
 .bar {
@@ -46,8 +46,8 @@ body {
 
 }
 
-.menu a:hover {
-    color: transparent;
+.navbar a:hover {
+    color: grey;
 
 }
 
@@ -128,7 +128,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    /* pointer-events: none; */
+    pointer-events: none;
     z-index: 2;
     border: 1px solid back;
 
@@ -143,9 +143,6 @@ body {
 .menue ul li a {
     margin: 0px;
 }
-
-
-
 .container {
     display: flex;
     justify-content: space-evenly;
@@ -421,6 +418,7 @@ body {
 }
 
 
+
         width: 100%;
         height: auto; 
         object-fit: cover; 
@@ -436,7 +434,9 @@ body {
         color: white;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
-
-
-
-    
+    .bxs-phone:before {
+        content: "\ee66";
+        color: white;
+        
+    }
+   
