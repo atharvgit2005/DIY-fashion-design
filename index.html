@@ -7,7 +7,6 @@
     <title>GRWM</title>
     <link rel="icon" href="All pictures/fav.jgp.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="GRWM.css" type="text/css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
        
 </head>
 
@@ -18,7 +17,6 @@
                 <ul>
                     <li>
                         <a href="#" style="text-decoration: underline;">Contact us</a>
-                        <i class='bx bxs-phone' ></i>
                     </li>
                 </ul>
             </div>
@@ -68,8 +66,8 @@
                     <video class="video_shop" loop preload="none" autoplay muted>
                         <source src="all videos/Fashion Designer - B Roll.mp4" type="video/mp4">
                     </video>
-                </a>
                     <div class="video-text">Shop</div>
+                </a>
             </div>
         
             <div class="video-container">
@@ -77,8 +75,8 @@
                     <video class="video_tutorial" loop preload="auto" autoplay muted>
                         <source src="all videos/Tutorial.mp4" type="video/mp4">
                     </video>
-                </a>
                     <div class="video-text">Tutorials</div>
+                </a>
             </div>
         
             <div class="video-container">
@@ -147,6 +145,44 @@
         animateCircles();
     </script>
 
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 
 
