@@ -150,3 +150,19 @@ body {
         font-size: 1rem;
     }
 }
+.container{display: flex;
+justify-content: space-between;
+gap:40px;
+padding:50px;}
+
+.container img{
+height:400px;
+width:500px;
+}
+.text-content ul{
+              line-height:40px;}
+#q{font-size: 70px;
+    font-style:adobe-garamond-pro;
+    letter-spacing: .04em;
+    margin-bottom: 30px;
+    }
