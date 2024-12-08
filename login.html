@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wraper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="inputbox">
+                <input type="text" placeholder="user-name" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" placeholder="password" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div class="rem-for">
+                <label for=""><input type="checkbox">Remember Me</label>
+                <a href="#">Forgot password</a>
+
+            </div>
+            <button type="submit" class="btn"><a href="index.html">Login</a></button>
+            <div class="register">
+                <p>Dont have an acount <a href="#">Registere</a></p>
+                
+            </div>
+        </form>
+
+    </div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <script>
+        const coords = { x: 0, y: 0 };
+        const circles = document.querySelectorAll(".circle");
+
+        circles.forEach(function (circle, index) {
+            circle.x = 0;
+            circle.y = 0;
+        });
+        window.addEventListener("mousemove", function (e) {
+            coords.x = e.pageX;
+            coords.y = e.pageY;
+        });
+
+        function animateCircles() {
+            let x = coords.x;
+            let y = coords.y;
+
+            circles.forEach(function (circle, index) {
+                circle.style.left = x - circle.offsetWidth / 2 + "px";
+                circle.style.top = y - circle.offsetHeight / 2 + "px";
+                circle.style.scale = (circles.length - index) / circles.length;
+                circle.x = x;
+                circle.y = y;
+
+                const nextCircle = circles[index + 1] || circles[0];
+
+                x += (nextCircle.x - x) * 0.3;
+                y += (nextCircle.y - y) * 0.3;
+            });
+
+            requestAnimationFrame(animateCircles);
+        }
+
+        animateCircles();
+    </script>
+</body>
+</html>
