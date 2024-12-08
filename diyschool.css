@@ -49,7 +49,7 @@ body {
 .hero {
     position: relative;
     height: 100vh;
-    background: url('All pictures/schooldiy.jpg') center/cover;
+    background: url('All pictures/p.jpg') center/cover;
     display: flex;
     align-items: flex-start;  /* Align text to top */
     justify-content: flex-start;  /* Align content to the left */
