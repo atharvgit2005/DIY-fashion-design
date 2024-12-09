@@ -165,7 +165,7 @@ body {
     left: 0;
     pointer-events: none;
     z-index: 2;
-    border: 1px solid back;
+    border: 1px solid black;
 
 }
 
@@ -659,4 +659,11 @@ body {
                 padding:40px;}
 * {
     cursor: none !important;
+}
+.hero2{
+    display: flex;
+    width: 40vh;
+    height: 40vh;
+    justify-content: right;
+    
 }
