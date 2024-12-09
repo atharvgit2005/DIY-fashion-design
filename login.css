@@ -3,10 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     cursor: none !important;
-<<<<<<< HEAD
-}
-=======
->>>>>>> ff1d08ad4a5db3617f6a0b0e6dcf5d98efbaee1a
 
 body{
     display: flex;
@@ -32,6 +28,10 @@ body{
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(255,255,255,.2);
 }
+.navbar a:hover {
+    color: grey;
+}
+
 .wraper h1{
     font-size: 36px;
     text-align: center;
