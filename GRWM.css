@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
     height: 100vh;
     position: relative;
-    background-color: black;
+    background-color: rgb(253, 251, 251);
 }
 
 #a {
@@ -649,7 +649,14 @@ body {
     color: white;
 
 }
-
+.about-container{
+                padding:30px;}
+.about-title{text-align: center;
+        font-size: 50px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+.about-content{font-size: 20px;
+                padding:40px;}
 * {
     cursor: none !important;
 }
