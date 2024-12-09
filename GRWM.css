@@ -125,9 +125,25 @@ body {
 
 .hero-text>h1 :nth-child(2) {
     font-family: "gotham", helvetica;
-    ;
+    
 }
-
+#grwm{
+    border-right: 5px solid grey;
+    
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(17),
+        cursor .4s step-end infinite alternate;
+}
+/*cursor blinking*/
+@keyframes cursor{
+    50% {border-color: transparent;}
+}
+@keyframes typing{
+    from {width: 0}
+}
 .hero-text P {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -165,7 +181,7 @@ body {
     left: 0;
     pointer-events: none;
     z-index: 2;
-    border: 1px solid black;
+    border: 0.5px solid #fca541;
 
 }
 
