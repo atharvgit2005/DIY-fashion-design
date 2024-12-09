@@ -144,10 +144,7 @@ body {
     cursor: pointer;
 }
 
-.hero-text button:hover {
-    background-color: #555;
-    color: white;
-}
+
 
 .logo {
     width: 10px;
@@ -159,13 +156,13 @@ body {
     height: 2vh;
     width: 2vh;
     border-radius: 50%;
-    background-color: rgb(255, 255, 255);
+    background:transparent;
     position: absolute;
     top: 0;
     left: 0;
     pointer-events: none;
     z-index: 2;
-    border: 1px solid back;
+    border: 2px solid #fca541;
 
 }
 
@@ -348,10 +345,7 @@ body {
         transition: background-color 0.2s ease;
     }
 
-    .hero-text button:hover {
-        background-color: #555;
-        color: white;
-    }
+    
 
     .logo {
         width: 10px;
@@ -525,10 +519,7 @@ body {
         transition: background-color 0.2s ease;
     }
 
-    .hero-text button:hover {
-        background-color: #555;
-        color: white;
-    }
+    
 
     .logo {
         width: 10px;
@@ -652,4 +643,32 @@ body {
 
 * {
     cursor: none !important;
+}
+#b {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+#b:hover {
+    color: black;
+    box-shadow: inset 200px 0 0 0 #fca541;
+    ;
+}
+
+
+#b {
+    color: #54b3d6;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+    padding: 20px;
+    background-color: transparent;
+}
+#b{
+    width: 150px;
+    height: 40px;
 }
