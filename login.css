@@ -4,6 +4,51 @@
     box-sizing: border-box;
     cursor: none !important;
 }
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    position: relative;
+    background-color: white;
+}
+
+.bar {
+    background-color: transparent;
+    height: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.3);
+    font-family: "gotham", helvetica;
+    text-decoration: dotted;
+    z-index: 1;
+    position: fixed;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    padding: 16px 30px;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: transparent;
+}
 body{
     display: flex;
     justify-content: center;
@@ -12,6 +57,10 @@ body{
     background: url("All pictures/diy bags.jpg") no-repeat;
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
+    height: 100vh;
+    position: relative;
+    background-color: white;
 
 }
 .wraper{
@@ -24,6 +73,10 @@ body{
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(255,255,255,.2);
 }
+.navbar a:hover {
+    color: grey;
+}
+
 .wraper h1{
     font-size: 36px;
     text-align: center;
