@@ -3,7 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     cursor: none !important;
+<<<<<<< HEAD
 }
+=======
+>>>>>>> ff1d08ad4a5db3617f6a0b0e6dcf5d98efbaee1a
 
 body{
     display: flex;
