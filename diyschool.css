@@ -43,13 +43,13 @@ body {
 }
 
 .menu a:hover {
-    color: transparent;
+    color: grey;
 }
 
 .hero {
     position: relative;
     height: 100vh;
-    background: url('All pictures/p.jpg') center/cover;
+    background: url('All pictures/temp-fash-cover-photo.jpeg') center/cover;
     display: flex;
     align-items: flex-start;  /* Align text to top */
     justify-content: flex-start;  /* Align content to the left */
