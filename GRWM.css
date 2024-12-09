@@ -4,7 +4,7 @@ body {
     overflow-x: hidden;
     height: 100vh;
     position: relative;
-    background-color: black;
+    background-color: white;
 }
 
 .bar {
@@ -243,11 +243,11 @@ body {
 }
 
 .navbar li a:hover {
-    color: #ccc;
+    color: grey;
 }
 
 .menu a:hover {
-    color: transparent;
+    color: gray;
 }
 
 #img1 {
@@ -357,7 +357,7 @@ body {
 }
 
 .menue ul li a:hover {
-    color: #666;
+    color:gray;
 }
 
 .container {
