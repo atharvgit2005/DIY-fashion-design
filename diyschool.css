@@ -166,3 +166,45 @@ width:500px;
     letter-spacing: .04em;
     margin-bottom: 30px;
     }
+    .courses {
+        background-color: lightgray;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px;
+        padding: 20px;
+    }
+    .courses h1{
+        font-size:70px;
+        font-style:oblique;
+        letter-spacing: 0.04;
+    }
+    
+    
+    .courses img {
+        height: 300px;
+        width: 350px;
+        margin: 15px;
+    }
+    
+    .image-container {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+    .image-container p {font-size: 30px;
+                        text-align: center;
+                        font-weight: 2;
+
+    }
+    .video{
+        margin:40px;
+    }
+    .video video{display:block;
+                margin:auto;}
+    .quotes{background-color: lightgray;
+            display:flex;
+            align-items: column;}
+    #d1{font-size:50px;}
+    
+    
