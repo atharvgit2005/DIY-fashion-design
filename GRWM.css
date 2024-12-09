@@ -15,7 +15,7 @@ body {
     background-size: 200% 100%;
     background-position: -100%;
     display: inline-block;
-    padding: 5px 0;
+    /* padding: 1px 0; */
     position: relative;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -50,7 +50,7 @@ body {
     margin: 0;
     padding: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
 }
 
@@ -239,7 +239,7 @@ body {
         margin: 0;
         padding: 0px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
 
@@ -661,9 +661,12 @@ body {
     cursor: none !important;
 }
 .hero2{
+    
     display: flex;
-    width: 40vh;
-    height: 40vh;
-    justify-content: right;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: black;
     
 }
