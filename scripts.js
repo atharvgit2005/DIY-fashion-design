@@ -65,4 +65,5 @@ const coords = { x: 0, y: 0 };
         else {
             console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
         }
-        // ]]>
+        
+        
