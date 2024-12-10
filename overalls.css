@@ -155,70 +155,13 @@ justify-content: space-between;
 gap:40px;
 padding:50px;}
 
-.container img{
-height:400px;
-width:500px;
-}
-.text-content ul{
-              line-height:40px;}
-#q{font-size: 70px;
-    font-style:adobe-garamond-pro;
-    letter-spacing: .04em;
-    margin-bottom: 30px;
-}
-    .courses {
-        background-color: lightgray;
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        gap: 20px;
-        padding: 20px;
-    }
+
     .courses h1{
         font-size:70px;
         font-style:oblique;
         letter-spacing: 0.04;
     }
-    
-    
-    .courses img {
-        height: 300px;
-        width: 350px;
-        margin: 15px;
-    }
-    
-    .image-container {
-        display: flex;
-        justify-content: space-evenly;
-        gap: 10px;
-    }
-    .image-container p {font-size: 30px;
-                        text-align: center;
-                        font-weight: 2;
 
-    }
-    .video{
-        margin:40px;
-    }
-    .video video{display:block;
-                margin:auto;}
-    .quotes{background-color: lightgray;
-            display:flex;
-            align-items: space-between;
-            flex-direction:column;
-            gap:50px;
-            padding:20px 80px;
-            }
-    .quotes div{text-align: center;
-                font-size:20px;
-                word-wrap: break-word;
-                overflow-wrap: break-word;
-                margin: 10px 0;
-                }
-    #d1{font-size:90px;
-        text-align: center;
-        letter-spacing: .04em;
-        font-style:adobe-garamond-pro;}
     
     
 #a {
@@ -265,7 +208,38 @@ width:500px;
     padding: 0 2rem;
 }
 .s1{padding:50px;
-    display:flex;}
+    }
+.box1{display:flex;
+      justify-content: space-evenly;
+       flex-direction: row;
+      align-items: center;}
 .s1 img{height:600px;
-        width:600px;}
-.s1 h1{font-size:100px;}
+        width:600px;
+        }
+.s1 h2{font-size: 40px;
+        font-family: 'Abril Fatface', serif;
+        color: #2c3e50;
+        font-weight: bold;}
+.s1 h1{font-size:100px;
+        margin-left: 20px;
+        text-align: center;
+        font-family: fantasy;
+        padding:20px;}
+.s2{padding:50px;
+    }
+.box2{display:flex;
+      justify-content: space-evenly;
+       flex-direction: row;
+      align-items: center;}
+.s2 img{height:600px;
+        width:600px;
+        }
+.s2 h2{font-size: 40px;
+    font-family: 'Abril Fatface', serif;
+    color: #2c3e50;
+    font-weight: bold;}
+.s2 h1{font-size:100px;
+        margin-right: 30px;
+        text-align: left;
+        font-family: fantasy;
+        padding:20px;}
