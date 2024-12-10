@@ -6,6 +6,114 @@ body {
     justify-content: center;
     align-items: center;
 }
+#a {
+  background-image: linear-gradient(to right,
+          #fca541,
+          #fca541 50%,
+          white 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#a:before {
+  content: '';
+  background: #fca541;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+#a:hover {
+  background-position: 0;
+  font-size: small;
+}
+
+#a:hover::before {
+  width: 100%;
+}
+
+.bar {
+  background-color: transparent;
+  height: 0px;
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.3);
+  font-family: "gotham", helvetica;
+  text-decoration: dotted;
+  z-index: 1;
+  position: fixed;
+}
+
+.navbar li {
+  float: left;
+  list-style: none;
+  padding: 16px 30px;
+}
+
+.navbar ul {
+  overflow: auto;
+
+
+}
+
+.navbar li a {
+  padding: 3px 3px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+}
+#b {
+  box-shadow: inset 0 0 0 0 #494949;
+  color: white;
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  border: none;
+  background-color: grey;
+  margin-top: 10px;
+  margin-left: 80%;
+}
+
+#b:hover {
+  color: black;
+  box-shadow: inset 200px 0 0 0 #fca541;
+  ;
+}
+
+
+#b {
+  color: white;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+
+  background-color: transparent;
+  backdrop-filter: transparent;
+}
+
+#b {
+  width: 150px;
+  height: 40px;
+}
+
 .box {
     width: 500px;
     height: 500px;
