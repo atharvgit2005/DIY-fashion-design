@@ -427,8 +427,56 @@ html{scroll-behavior: smooth;}
         transform: translateX(100%);
     }
 }
-.box{display:flex;
-    justify-content: space-around;
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #090909;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+    margin: 50px;
+}
+
+.about-content {
+    flex: 1;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #f1b276;
+    padding-right: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+.brand-name {
+    font-weight: bold;
+    color: #f05454;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
     }
-.box img{height:500px;
-        width:600px;}
+
+    .about-content {
+        padding-right: 0;
+    }
+
+    .about-image img {
+        margin-top: 20px;
+    }
+}
