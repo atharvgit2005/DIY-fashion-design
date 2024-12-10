@@ -243,6 +243,24 @@ padding:50px;}
         text-align: left;
         font-family: fantasy;
         padding:20px;}
+.s3{padding:10px;
+    }
+.box3{display:flex;
+      justify-content: space-evenly;
+       flex-direction: row;
+      align-items: center;}
+.s3 img{height:600px;
+        width:600px;
+        }
+.s3 h2{font-size: 40px;
+        font-family: 'Abril Fatface', serif;
+        color: #2c3e50;
+        font-weight: bold;}
+.s3 h1{font-size:100px;
+        margin-left: 20px;
+        text-align: center;
+        font-family: fantasy;
+        padding:0px;}
 
 .hover-heading1 {
   font-family: 'Abril Fatface', serif;
