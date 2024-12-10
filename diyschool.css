@@ -255,17 +255,3 @@ width:500px;
 #a:hover::before {
     width: 100%;
 }
-.hero {
-    position: relative;
-    height: 100vh;
-    background: url('All pictures/overalls.jpg') center/contain;
-    display: flex;
-    align-items: flex-start; 
-    justify-content: flex-start; 
-    padding: 0 2rem;
-}
-.s1{padding:50px;
-    display:flex;}
-.s1 img{height:600px;
-        width:600px;}
-.s1 h1{font-size:100px;}
