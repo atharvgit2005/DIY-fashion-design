@@ -394,8 +394,6 @@ body {
 }
 .anout-container img {height:500px;
                 width:400px;}
-.anout-container img {height:500px;
-                width:400px;}
 /* Animation for floating effect */
 @keyframes float {
 
@@ -429,3 +427,8 @@ html{scroll-behavior: smooth;}
         transform: translateX(100%);
     }
 }
+.box{display:flex;
+    justify-content: space-around;
+    }
+.box img{height:500px;
+        width:600px;}
