@@ -52,8 +52,8 @@ body {
     height: 100vh;
     background: url('All pictures/temp-fash-cover-photo.jpeg') center/cover;
     display: flex;
-    align-items: flex-start;  /* Align text to top */
-    justify-content: flex-start;  /* Align content to the left */
+    align-items: flex-start;
+    justify-content: flex-start; 
     padding: 0 2rem;
 }
 
@@ -219,7 +219,7 @@ padding:50px;}
         }
 .s1 h2{font-size: 40px;
         font-family: 'Abril Fatface', serif;
-        color: #2c3e50;
+        color: #cad1d7;
         font-weight: bold;}
 .s1 h1{font-size:100px;
         margin-left: 20px;
@@ -237,7 +237,7 @@ padding:50px;}
         }
 .s2 h2{font-size: 40px;
     font-family: 'Abril Fatface', serif;
-    color: #2c3e50;
+    color: #dde4ec;
     font-weight: bold;}
 .s2 h1{font-size:100px;
         margin-right: 30px;
@@ -255,7 +255,7 @@ padding:50px;}
         }
 .s3 h2{font-size: 40px;
         font-family: 'Abril Fatface', serif;
-        color: #2c3e50;
+        color: #e1e4e7;
         font-weight: bold;}
 .s3 h1{font-size:100px;
         margin-left: 20px;
