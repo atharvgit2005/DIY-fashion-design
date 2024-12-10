@@ -18,26 +18,30 @@
     </header>
     
     <div class="wraper">
-            <h1 style="text-decoration: underline;">Login</h1>
+            <h1 style="text-decoration: underline;">Register Here</h1>
             <h3 id="warn"></h3>
             <div class="inputbox">
                 <input type="text" placeholder="User-name" required id="user">
                 <i class='bx bxs-user'></i>
             </div>
             <div class="inputbox">
+                <input type="email" placeholder="Email" required id="email">
+                <i class='bx bx-envelope'></i>
+            </div>
+            <div class="inputbox">
                 <input type="password" placeholder="Password" required id="pass">
                 <i class='bx bxs-lock-alt' ></i>
             </div>
-            <div class="rem-for">
-                <label for=""><input type="checkbox">Remember Me</label>
-                <a href="#">Forgot password</a>
-
+            <div class="inputbox">
+                <input type="password" placeholder="Confirm-Password" required id="conpass">
+                <i class='bx bxs-lock-alt' ></i>
             </div>
+            
 
-            <button class="btn" onclick="log_in()">Login</button>
+            <button class="btn" onclick="log_in()">Sign Up</button>
 
             <div class="register">
-                <p>Dont have an acount <a href="./register.html">Register</a></p>
+                <p>Alredy a user <a href="./login.html">Login</a></p>
                 
             </div>
 
@@ -100,17 +104,21 @@
         function log_in(){
             const user = document.getElementById('user');
             const pass = document.getElementById('pass');
+            const email = document.getElementById('email');
+            const conpass = document.getElementById('conpass')
 
             let userval = String(user.value);
             let passval = String(pass.value);
+            let emailval = String(email.value);
+            let conpassval = String(conpass.value);
 
-            if (userval != '' && passval != ''){
+            if (userval != '' && passval != '' && emailval != '' && conpassval != ''){
                 window.location.href = "index.html";
             }
             else{
-                document.getElementById('warn').innerHTML = "Please enter both User name and Password";
+                document.getElementById('warn').innerHTML = "Please enter all the credential";
                 document.getElementById('warn').style.backgroundColor = "" ;
-                document.getElementById('warn').style.padding = "2rem" ;
+                document.getElementById('warn').style.padding = "1rem" ;
             }
         }
     </script>

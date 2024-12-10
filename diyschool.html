@@ -7,36 +7,46 @@
     <title>GRWM</title>
     <link rel="icon" href="All pictures/fav.jgp.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="diyschool.css" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
        
 </head>
 
 <body>
     <header>
         <nav class="navbar" style="display: flex; justify-content: space-between; width: 103%; ">
-            <div class="contact_us" style="display: flex;justify-content: left;  width: 100%; margin-left: -48px;">
+            <div class="contact_us" style="display: flex;justify-content: center;  width: 100%; margin-left: -11%;">
                 <ul>
-                    <li>
+                    <li id="a">
                         <i class='bx bxs-phone' ></i>
-                        <a href="#">Contact us</a>
+                        <a  href="#">Contact us</a>
                     </li>
                 </ul>
             </div>
-            <div class="logo" style="display: flex;justify-content: center;  width: 100%; margin-left: 80px;">
+            <div class="logo" style="display: flex;justify-content: center;  width: 100%; margin-left: 14%;">
                 <a href="http://127.0.0.1:5500/DIY-fashion-design/index.html">
                     <img src="All pictures/GRWM white.png" style="width:  150px;">
                 </a>
             </div>
-            <div class="menu" style="display: flex; justify-content: right;  width: 115%;
-    margin-right: 50px">
+            <div class="menu" style="display: flex; justify-content: center;  width: 115%;
+    margin-right: 10px">
                 <ul>
-                    <li><a class="a" href="">Home</a></li>
-                    <i class='bx bxs-home' ></i>
-                    <li><a class="a" href="">About</a></li>
-                    <i class='bx bx-expand-vertical' ></i>
-                    <li><a class="a" href="">Services</a></li>
-                    <i class='bx bxs-server' ></i>
-                    <li><a class="a" href="login.html">Log In</a></li>
-                    <i class='bx bxs-log-in' ></i>
+                    <li id="a">
+                        <i class='bx bxs-home'></i>
+                        <a id="home" href="">Home</a>
+                    </li>
+                    <li id="a"><a id="about" href="#about"></a>
+                        <i class='bx bx-expand-vertical' ></i>
+                        <a id="about" href="">About</a>
+                    </li>
+                    <!-- <li id="a">
+                        <i class='bx bxs-server' ></i>
+                        <a id="services" href="">Services</a>
+                    </li> -->
+                    <li id="a">
+                        <i class='bx bxs-log-in' ></i>
+                        <a id="log_in" href="login.html">Log In</a>
+                    </li>
                 </ul>
             </div>
            
@@ -74,4 +84,31 @@
             </div>
         </div>
      </section>
+     <section>
+        <div class="courses">
+            <h1>Our Courses</h1>
+            <div class="image-container">
+                <div><img src="All pictures/clothes.jpg" alt="Clothes">
+                <p>Course1</p>
+                <button>Enroll now</button></div>
+                <div><img src="All pictures/distressed jeaans.jpg" alt="Distressed Jeans">
+                <p>course2</p>
+                <button>Enroll now</button></div>
+                <div><img src="All pictures/tshirt.jpg" alt="T-Shirt">
+                    <p>course3</p>
+                <button>Enroll now</button></div>
+            </div>
+        </div>
+    </section>
+    <div class="video">
+        <video width="900" height="600" controls>
+            <source src="all videos/video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="quotes">
+        <div id="d1">Live a more creative<br>life</div>
+        <div>There is so much joy and satisfaction in building your creative confidence and having more creativity in your life. Through curated video courses that you can do online and at your own pace, Geneva’s DIY School allows you to unlock your inner maker.</div>
+    </div>
+    
      </body>
+
