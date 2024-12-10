@@ -45,3 +45,84 @@ body {
         --angle: 360deg;
     }
 }
+
+
+  .form-container {
+    background: #2c2c2c;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    height: 460px;
+    
+  }
+
+  .form-container h1 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+
+  .form-container p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: #b3b3b3;
+  }
+
+  .form-container input,
+  .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #1a1a1a;
+    color: #fff;
+  }
+
+  .form-container input::placeholder,
+  .form-container textarea::placeholder {
+    color: #b3b3b3;
+  }
+
+  .form-container textarea {
+    resize: none;
+    height: 80px;
+  }
+
+  .form-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #6c5ce7;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .form-container button:hover {
+    background: #8e7dff;
+    box-shadow: 0 0 15px #6c5ce7, 0 0 25px #8e7dff;
+  }
+
+  .form-container button:active {
+    transform: scale(0.95);
+  }
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px #6c5ce7;
+    }
+    50% {
+      box-shadow: 0 0 15px #8e7dff;
+    }
+    100% {
+      box-shadow: 0 0 5px #6c5ce7;
+    }
+  }
+
+  .form-container button:hover {
+    animation: glow 1s infinite alternate;
+  }
