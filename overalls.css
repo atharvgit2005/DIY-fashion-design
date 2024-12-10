@@ -243,3 +243,40 @@ padding:50px;}
         text-align: left;
         font-family: fantasy;
         padding:20px;}
+
+.hover-heading1 {
+  font-family: 'Abril Fatface', serif;
+  font-size: 2rem; 
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.hover-heading1 span {
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-heading1 span:hover {
+  color: #ff6347;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hover-heading1 span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #ff6347; 
+  transition: width 0.3s ease;
+}
+
+.hover-heading1 span:hover::after {
+  width: 100%;
+}
+
