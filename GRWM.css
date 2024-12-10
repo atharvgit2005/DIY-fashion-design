@@ -677,6 +677,18 @@ body {
     background-color: black;
     
 }
+.inside{
+    position: relative;
+    top: 95px;
+    right: 0;
+    height: calc(100% - 135px - 55px);
+    width: 17%;
+    background-color: white;
+    text-align: center;
+    padding: 8px;
+    margin-left: -60px;
+}
+
 #b {
     box-shadow: inset 0 0 0 0 #54b3d6;
     color: #54b3d6;
