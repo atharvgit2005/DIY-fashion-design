@@ -221,22 +221,18 @@ body {
 
 #videolst {
     display: flex;
-    justify-content: space-between;
-    margin-top: 5vh;
-    padding-top: 0px;
-    margin-bottom: 10px;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
+    background-color: red;
+   
+}
+.video-container {
+    flex: 1;
 }
 
-.video-container {
-    position: relative;
-    width: 30%;
-    margin: 10px;
-    overflow: hidden;
-    flex: 1;
-    box-sizing: border-box;
-    
-}
+
+
+
 
 .video-container a {
     cursor: pointer;

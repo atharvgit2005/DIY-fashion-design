@@ -4,7 +4,8 @@ body {
     overflow-x: hidden;
     height: 100vh;
     position: relative;
-    background-color: white;
+    background-color: black;
+    color: white;
 }
 
 .bar {
