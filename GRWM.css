@@ -696,6 +696,8 @@ body {
     margin: 0 -.25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     border: none;
+    margin-top: 10px;
+    margin-left: 80%;
 }
 
 #b:hover {
