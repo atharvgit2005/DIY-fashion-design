@@ -416,7 +416,7 @@ body {
     opacity: 0.05;
     animation: wave 5s linear infinite;
 }
-
+html{scroll-behavior: smooth;}
 @keyframes wave {
     from {
         transform: translateX(-100%);
