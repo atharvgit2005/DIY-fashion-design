@@ -4,33 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./register.css">
+    <link rel="stylesheet" href="login.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
+        <!-- <div class="logo">
+            <a href="">
+            <img src="./All pictures/GRWM white.png" alt="">
+        </a> -->
+                
+        </div>
     </header>
+    
     <div class="wraper">
-            <h1 style="text-decoration: underline;">Register here </h1>
+            <h1 style="text-decoration: underline;">Register Here</h1>
             <h3 id="warn"></h3>
             <div class="inputbox">
                 <input type="text" placeholder="User-name" required id="user">
                 <i class='bx bxs-user'></i>
             </div>
             <div class="inputbox">
+                <input type="email" placeholder="Email" required id="pass">
+                <i class='bx bx-envelope'></i>
+            </div>
+            <div class="inputbox">
                 <input type="password" placeholder="Password" required id="pass">
                 <i class='bx bxs-lock-alt' ></i>
             </div>
-            <div class="rem-for">
-                <label for=""><input type="checkbox">Remember Me</label>
-
-
+            <div class="inputbox">
+                <input type="password" placeholder="Confirm-Password" required id="pass">
+                <i class='bx bxs-lock-alt' ></i>
             </div>
+            
 
-            <button class="btn" onclick="log_in()">Register here</button>
+            <button class="btn" onclick="log_in()">Sign Up</button>
 
             <div class="register">
-                <p>Already a member? <a href="./login.html">Log in </a></p>
+                <p>Alredy a user <a href="./login.html">Login</a></p>
                 
             </div>
 

@@ -1,4 +1,4 @@
-g*{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url("All pictures/register_image.jpg") no-repeat;
+    background: url("All pictures/login_image.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     overflow-x: hidden;
@@ -130,4 +130,8 @@ button a{
     color: red;
     backdrop-filter: blur(20px);
     
+}
+.logo{
+    display: flex;
+    width: 2vh;
 }
