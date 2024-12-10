@@ -25,7 +25,7 @@
                 <i class='bx bxs-user'></i>
             </div>
             <div class="inputbox">
-                <input type="email" placeholder="Email" required id="pass">
+                <input type="email" placeholder="Email" required id="email">
                 <i class='bx bx-envelope'></i>
             </div>
             <div class="inputbox">
@@ -33,7 +33,7 @@
                 <i class='bx bxs-lock-alt' ></i>
             </div>
             <div class="inputbox">
-                <input type="password" placeholder="Confirm-Password" required id="pass">
+                <input type="password" placeholder="Confirm-Password" required id="conpass">
                 <i class='bx bxs-lock-alt' ></i>
             </div>
             
@@ -104,17 +104,21 @@
         function log_in(){
             const user = document.getElementById('user');
             const pass = document.getElementById('pass');
+            const email = document.getElementById('email');
+            const conpass = document.getElementById('conpass')
 
             let userval = String(user.value);
             let passval = String(pass.value);
+            let emailval = String(email.value);
+            let conpassval = String(conpass.value);
 
-            if (userval != '' && passval != ''){
+            if (userval != '' && passval != '' && emailval != '' && conpassval != ''){
                 window.location.href = "index.html";
             }
             else{
-                document.getElementById('warn').innerHTML = "Please enter both User name and Password";
+                document.getElementById('warn').innerHTML = "Please enter all the credential";
                 document.getElementById('warn').style.backgroundColor = "" ;
-                document.getElementById('warn').style.padding = "2rem" ;
+                document.getElementById('warn').style.padding = "1rem" ;
             }
         }
     </script>

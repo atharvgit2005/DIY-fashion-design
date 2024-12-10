@@ -4,7 +4,8 @@ body {
     overflow-x: hidden;
     height: 100vh;
     position: relative;
-    background-color: rgb(253, 251, 251);
+    background: rgb(255,174,0);
+    background: linear-gradient(0deg, rgba(255,174,0,1) 0%, rgba(0,0,0,1) 21%);
 }
 
 #a {
@@ -125,25 +126,33 @@ body {
 
 .hero-text>h1 :nth-child(2) {
     font-family: "gotham", helvetica;
-    
+
 }
-#grwm{
+
+#grwm {
     border-right: 5px solid grey;
-    
+
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    animation: 
+    animation:
         typing 2s steps(17),
         cursor .4s step-end infinite alternate;
 }
+
 /*cursor blinking*/
-@keyframes cursor{
-    50% {border-color: transparent;}
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
 }
-@keyframes typing{
-    from {width: 0}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
 }
+
 .hero-text P {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -172,7 +181,7 @@ body {
     height: 2vh;
     width: 2vh;
     border-radius: 50%;
-    background:transparent;
+    background: transparent;
     position: absolute;
     top: 0;
     left: 0;
@@ -361,7 +370,7 @@ body {
         transition: background-color 0.2s ease;
     }
 
-    
+
 
     .logo {
         width: 10px;
@@ -535,7 +544,7 @@ body {
         transition: background-color 0.2s ease;
     }
 
-    
+
 
     .logo {
         width: 10px;
@@ -656,27 +665,37 @@ body {
     color: white;
 
 }
-.about-container{
-                padding:30px;}
-.about-title{text-align: center;
-        font-size: 50px;
-        font-family:Georgia, 'Times New Roman', Times, serif;
-        }
-.about-content{font-size: 20px;
-                padding:40px;}
+
+.about-container {
+    padding: 30px;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-content {
+    font-size: 20px;
+    padding: 40px;
+}
+
 * {
     cursor: none !important;
 }
-.hero2{
-    
+
+.hero2 {
+
     display: flex;
     width: 100%;
     height: 70vh;
     justify-content: center;
     margin-top: 100px;
     background-color: black;
-    
+
 }
+<<<<<<< Updated upstream
 .inside{
     position: relative;
     top: 95px;
@@ -688,6 +707,8 @@ body {
     padding: 8px;
     margin-left: -60px;
 }
+=======
+>>>>>>> Stashed changes
 
 #b {
     box-shadow: inset 0 0 0 0 #54b3d6;
@@ -716,7 +737,8 @@ body {
     padding: 20px;
     background-color: transparent;
 }
-#b{
+
+#b {
     width: 150px;
     height: 40px;
 }
