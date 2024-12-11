@@ -215,8 +215,8 @@ width:500px;
     
     
     .courses img {
-        height: 300px;
-        width: 350px;
+        height: 436px;
+        width: 346px;
         margin: 15px;
     }
     
@@ -229,6 +229,21 @@ width:500px;
                         text-align: center;
                         font-weight: 2;
 
+    }
+    .image-container button{
+        display: flex;
+
+;
+    margin-left: 130px;
+    width: 124px;
+    height: 82px;
+    text-align: center;
+    padding: 31px;
+    color: white;
+    background-color: black;
+    }
+    .image-container button :hover{
+        background-color: #fca541;
     }
     .video{
         margin:40px;
